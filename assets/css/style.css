@@ -1,0 +1,204 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header{background-color: rgb(41, 6, 235);
+grid-area: header;
+display: flex;
+height: 4rem;}
+
+nav{display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem}
+    
+    .nav1{display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;}
+    
+    .nav2{margin-right: 10px;}
+
+aside{background-color: rgba(163, 163, 156, 0.432);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+height: 4rem;}
+     
+    aside select{
+        width: 28rem;
+        display: flex;
+        margin-left: 3rem;
+        height: 2rem;}
+
+main{background-color: rgb(236, 243, 236);
+grid-area: main;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 29rem;}
+
+.main1{display: flex;
+flex-direction: column;
+border: 1px solid rgb(190, 185, 185);
+padding: 1rem;}
+
+.main1{text-align: center;}
+
+.sinraya{text-decoration: none;}
+
+main img{
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    main a{margin-top: 1rem;}
+
+    .main2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;}
+
+        .main2 button{
+            height: 2rem;
+             width: 7rem;
+             margin-left: 72px;
+             color: white;
+             background-color: rgb(41, 6, 235)}
+
+footer{background-color: rgb(4, 4, 107);
+grid-area: footer;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.footer1{display: flex;
+gap:1rem}
+
+.header-media{display: none;}
+
+.headerM{display: none;}
+
+.main-caja1{display: none;}
+
+.main-caja2{display: none;}
+
+@media (min-width: 756px) {
+    body{font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-columns: 12rem auto;
+    grid-template-areas:
+    'header aside aside'
+    'header main main'
+    'header main main'
+    'footer main main';}
+
+    header{
+        height: 101vh;}
+
+        .nav1{display: none;}
+
+        .nav2{display: none;}
+
+            .headerM{font-size: 14px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 35rem;
+             min-height: 1rem;}
+
+        .headerM1{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;}
+
+            .headerM1-2{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1rem;
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;}
+
+    aside select{ width: 65rem;}
+
+    main{height: 100vh;}
+
+    main a{display: none;}
+
+    .main1{display: none ;}
+
+    .main-caja1 img{
+        height: 10rem;}
+
+    .main-caja1{display: flex;
+              gap: 5rem;
+              text-align: center;
+              margin-bottom: 2rem; }
+
+     .caja1{display: flex;
+    flex-direction: column;
+     margin-top: 1rem;}
+
+     .caja1 button{width: 5rem;
+    margin-left: 85px;
+     padding: 5px;
+     color: white;
+                    background-color: rgb(41, 6, 235)}
+
+     .caja1-border{border: 1px solid  rgb(190, 185, 185);
+    padding: 1rem;}
+
+  .main-caja2{display: flex;
+              gap: 5rem;
+              margin-top: 1rem;
+              text-align: center;}
+
+              .caja2{display: flex;
+                flex-direction: column;
+                margin-top: 1rem;}
+                
+                .caja2 button{width: 5rem;
+                    margin-left: 85px;
+                     padding: 5px;
+                     color: white;
+                    background-color: rgb(41, 6, 235);}
+
+                     .caja2-border{border: 1px solid  rgb(190, 185, 185);
+                        padding: 1rem;}
+
+                .main-caja2 img{
+                height: 10rem;
+                gap: 1px;
+                margin-top: 2rem;}
+
+                footer{font-size: 1rem;
+                    text-align: center;}
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
